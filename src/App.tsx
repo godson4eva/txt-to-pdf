@@ -1,6 +1,7 @@
-import { ChangeEvent, useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
+import type { ChangeEvent } from 'react'
 import { jsPDF } from 'jspdf'
-import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold, Copy, Download, FilePlus2, FileText, ImagePlus, Italic, List, MoreHorizontal, MoveDown, MoveUp, Plus, Redo2, RotateCw, Search, Trash2, Type, Underline, Undo2, Upload } from 'lucide-react'
+import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold, Copy, Download, FilePlus2, FileText, ImagePlus, Italic, List, MoreHorizontal, MoveDown, MoveUp, Plus, Redo2, RotateCw, Search, Trash2, Underline, Undo2, Upload } from 'lucide-react'
 import './App.css'
 
 type Page = { id: number; title: string; content: string; image?: string; rotation: number }
